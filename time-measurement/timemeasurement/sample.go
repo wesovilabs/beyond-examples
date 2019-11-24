@@ -23,18 +23,6 @@ func myFunction(msg string, returnError bool) error {
 	return nil
 }
 
-type myType struct {
-}
-
-func (t *myType) myMethod(msg string, returnError bool) error {
-	fmt.Println(msg)
-	time.Sleep(time.Duration(times[msg]) * time.Second)
-	if returnError {
-		return errors.New("unexpected error")
-	}
-	return nil
-}
-
 func main() {
 	myFunction("very-slow", false)
 	myFunction("slow", false)

@@ -1,4 +1,4 @@
-package main
+package measurement
 
 import (
 	"errors"
@@ -14,20 +14,11 @@ var times = map[string]float32{
 	"very-fast": 0.5,
 }
 
-func myFunction(msg string, returnError bool) error {
+func MyFunction(msg string, returnError bool) error {
 	fmt.Println(msg)
 	time.Sleep(time.Duration(times[msg]) * time.Second)
 	if returnError {
 		return errors.New("unexpected error")
 	}
 	return nil
-}
-
-func main() {
-	myFunction("very-slow", false)
-	myFunction("slow", false)
-	myFunction("normal", false)
-	myFunction("fast", false)
-	myFunction("very-fast", false)
-	myFunction("Stop testing on Animals", false)
 }

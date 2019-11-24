@@ -1,0 +1,8 @@
+.goa
+.idea
+*.log
+coverage.txt
+build
+dist
+vendor
+temporal

@@ -6,16 +6,16 @@ import (
 	"time"
 )
 
-var times = map[string]float32{
-	"very-slow": 4,
-	"slow":      3,
-	"medium":    2,
-	"fast":      1,
-	"very-fast": 0.5,
+var times = map[string]int32{
+	"very-slow": 5,
+	"slow":      4,
+	"medium":    3,
+	"fast":      2,
+	"very-fast": 1,
 }
 
 func MyFunction(msg string, returnError bool) error {
-	fmt.Println(msg)
+	fmt.Printf("[%s] %s\n",time.Now().Format("15:04:05",),msg)
 	time.Sleep(time.Duration(times[msg]) * time.Second)
 	if returnError {
 		return errors.New("unexpected error")

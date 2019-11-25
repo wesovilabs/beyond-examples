@@ -22,12 +22,7 @@ func (a *ErrorsEnrichAdvice) Returning(ctx *context.GoaContext) {
 }
 
 func isError(_ int, arg *context.Arg) bool{
-	if val := arg.Value(); val != nil {
-		if _, ok := val.(*CustomError);!ok{
-			return arg.IsError()
-		}
-	}
-	return false
+	return arg.IsError()
 }
 
 

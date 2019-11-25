@@ -22,3 +22,11 @@ func MyFunction(msg string, returnError bool) error {
 	}
 	return nil
 }
+
+func Check() *Test{
+	return nil
+}
+
+type Test struct {
+
+}

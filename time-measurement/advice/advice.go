@@ -2,6 +2,7 @@ package advice
 
 import (
 	"fmt"
+	"github.com/pkg/errors"
 	"github.com/wesovilabs/goa/api"
 	"github.com/wesovilabs/goa/api/context"
 	"time"
@@ -17,8 +18,22 @@ func (a *MyAdvice) Before(context *context.GoaContext) {
 
 func (a *MyAdvice) Returning(goaContext *context.GoaContext) {
 	startTime := goaContext.Get("advice.start").(time.Time)
-	spentTime := time.Now().Sub(startTime).Seconds()
-	fmt.Printf(" -> took %v seconds\n", spentTime)
+	takenTime := time.Now().Sub(startTime).Seconds()
+
+	if takenTime > a.limit {
+		if index, _ := goaContext.Results().Find(
+			func(_ int, arg *context.Arg) bool {
+				return arg.IsError()
+			}); index > -1 {
+			goaContext.Results().
+				SetAt(
+					index,
+					errors.New(
+						fmt.Sprintf("function took %v seconds",
+							takenTime)),
+				)
+		}
+	}
 }
 
 func NewMyAdvice(limit float64) func() api.Around {

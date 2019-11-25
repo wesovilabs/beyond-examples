@@ -1,4 +1,4 @@
-module github.com/wesovilabs/goaexamples/timemeasurement
+module github.com/wesovilabs/goaexamples/returning
 
 require (
 	github.com/wesovilabs/goa v0.0.1-beta.0.20191125184901-1165db17a77e

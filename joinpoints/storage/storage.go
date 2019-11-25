@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"github.com/wesovilabs/goaexamples/joinpointsmodel"
+	"github.com/wesovilabs/goaexamples/joinpoints/model"
 )
 
 type Database interface {

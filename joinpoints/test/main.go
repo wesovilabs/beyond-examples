@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/wesovilabs/goaexamples/joinpointsmodel"
-	"github.com/wesovilabs/goaexamples/joinpointstest/client"
+	"github.com/wesovilabs/goaexamples/joinpoints/model"
+	"github.com/wesovilabs/goaexamples/joinpoints/test/client"
 	"log"
 	"net/http"
 	"net/url"

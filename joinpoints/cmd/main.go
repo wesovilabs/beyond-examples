@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"github.com/go-chi/chi"
 	"github.com/wesovilabs/goa/api"
-	"github.com/wesovilabs/goaexamples/joinpointsadvice"
-	"github.com/wesovilabs/goaexamples/joinpointshandler"
-	"github.com/wesovilabs/goaexamples/joinpointsstorage"
+	"github.com/wesovilabs/goaexamples/joinpoints/advice"
+	"github.com/wesovilabs/goaexamples/joinpoints/handler"
+	"github.com/wesovilabs/goaexamples/joinpoints/storage"
 	"net/http"
 )
 

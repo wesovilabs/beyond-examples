@@ -1,14 +1,10 @@
 package main
 
 import (
-	"github.com/wesovilabs/goa/api"
-	"github.com/wesovilabs/goaexamples/timemeasurement/advice"
 	"github.com/wesovilabs/goaexamples/timemeasurement/measurement"
 )
 
-func Goa() *api.Goa {
-	return api.New().WithAround(advice.NewMyAdvice(float64(1.1)), "*.*(...)...")
-}
+
 
 func main() {
 	if err:=measurement.MyFunction("very-slow", false);err!=nil{

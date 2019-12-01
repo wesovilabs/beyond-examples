@@ -22,3 +22,8 @@ func (g *Beyond) WithBefore(func() Before, string) *Beyond {
 func (g *Beyond) WithReturning(func() Returning, string) *Beyond {
 	return g
 }
+
+// Exclude add path to be ignored by beyond advices
+func (g *Beyond) Exclude(...string) *Beyond {
+	return g
+}

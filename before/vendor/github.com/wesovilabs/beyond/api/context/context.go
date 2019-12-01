@@ -12,7 +12,8 @@ const (
 
 // BeyondContext Beyond context
 type BeyondContext struct {
-	ctx map[contextKey]interface{}
+	ctx       map[contextKey]interface{}
+	completed bool
 }
 
 // Pkg returns the package
@@ -62,7 +63,7 @@ func (c *BeyondContext) Results() *Args {
 
 // NewContext constructor for beyond context
 func NewContext() *BeyondContext {
-	return &BeyondContext{make(map[contextKey]interface{})}
+	return &BeyondContext{make(map[contextKey]interface{}), false}
 }
 
 // WithPkg set the package
@@ -103,4 +104,14 @@ func (c *BeyondContext) Set(key string, value interface{}) {
 // Get return the argument value
 func (c *BeyondContext) Get(key string) interface{} {
 	return c.ctx[contextKey(key)]
+}
+
+// Exit won't call joinpoint
+func (c *BeyondContext) Exit() {
+	c.completed = true
+}
+
+// IsCompleted returns true if flow must stop
+func (c *BeyondContext) IsCompleted() bool {
+	return c.completed
 }

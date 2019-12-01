@@ -4,7 +4,6 @@
 coverage.txt
 build
 dist
-vendor
 temporal
 generated
 .private

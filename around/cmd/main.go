@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/wesovilabs/goa/api"
-	"github.com/wesovilabs/goaexamples/around/advice"
-	"github.com/wesovilabs/goaexamples/around/greeting"
+	"github.com/wesovilabs/beyond/api"
+	"github.com/wesovilabs/beyond-examples/around/advice"
+	"github.com/wesovilabs/beyond-examples/around/greeting"
 )
 
-func Goa() *api.Goa {
+func Beyond() *api.Beyond {
 	return api.New().
 		WithAround(advice.NewTimerAdvice(advice.Microseconds), "greeting.Hello(string)...").
 		WithAround(advice.NewTimerAdvice(advice.Nanoseconds), "greeting.Bye(string)...")

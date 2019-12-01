@@ -3,8 +3,8 @@ package storage
 import (
 	"errors"
 	"fmt"
-	"github.com/wesovilabs/goaexamples/joinpoints/helper"
-	"github.com/wesovilabs/goaexamples/joinpoints/model"
+	"github.com/wesovilabs/beyond-examples/joinpoints/helper"
+	"github.com/wesovilabs/beyond-examples/joinpoints/model"
 )
 
 type memDBClient struct {

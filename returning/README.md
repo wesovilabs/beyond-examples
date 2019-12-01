@@ -1,1 +1,1 @@
-[Documentation](http://wesovilabs.github.io/goa/advices/returning)
+[Documentation](http://wesovilabs.github.io/beyond/advices/returning)

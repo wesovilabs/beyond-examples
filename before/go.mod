@@ -1,7 +1,7 @@
-module github.com/wesovilabs/goaexamples/before
+module github.com/wesovilabs/beyond-examples/before
 
 require (
-	github.com/wesovilabs/goa v0.0.1
+	github.com/wesovilabs/beyond v0.0.1
 	golang.org/x/sys v0.0.0-20191120155948-bd437916bb0e // indirect
 )
 

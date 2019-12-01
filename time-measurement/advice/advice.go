@@ -2,8 +2,8 @@ package advice
 
 import (
 	"fmt"
-	"github.com/wesovilabs/goa/api"
-	"github.com/wesovilabs/goa/api/context"
+	"github.com/wesovilabs/beyond/api"
+	"github.com/wesovilabs/beyond/api/context"
 	"time"
 )
 
@@ -11,12 +11,12 @@ type MyAdvice struct {
 	limit float64 // In seconds
 }
 
-func (a *MyAdvice) Before(context *context.GoaContext) {
+func (a *MyAdvice) Before(context *context.BeyondContext) {
 	context.Set("advice.start", time.Now())
 }
 
-func (a *MyAdvice) Returning(goaContext *context.GoaContext) {
-	startTime := goaContext.Get("advice.start").(time.Time)
+func (a *MyAdvice) Returning(beyondContext *context.BeyondContext) {
+	startTime := beyondContext.Get("advice.start").(time.Time)
 	spentTime := time.Now().Sub(startTime).Seconds()
 	fmt.Printf(" -> took %v seconds\n", spentTime)
 }

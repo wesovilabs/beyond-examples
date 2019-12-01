@@ -2,8 +2,8 @@ package advice
 
 import (
 	"fmt"
-	"github.com/wesovilabs/goa/api"
-	"github.com/wesovilabs/goa/api/context"
+	"github.com/wesovilabs/beyond/api"
+	"github.com/wesovilabs/beyond/api/context"
 	"strings"
 	"time"
 )
@@ -21,11 +21,11 @@ type TimerAdvice struct {
 	mode TimerMode
 }
 
-func (a *TimerAdvice) Before(ctx *context.GoaContext) {
+func (a *TimerAdvice) Before(ctx *context.BeyondContext) {
 	ctx.Set(timeStartKey, time.Now())
 }
 
-func (a *TimerAdvice) Returning(ctx *context.GoaContext) {
+func (a *TimerAdvice) Returning(ctx *context.BeyondContext) {
 	start := ctx.Get(timeStartKey).(time.Time)
 	timeDuration:="?"
 	switch a.mode {

@@ -3,15 +3,15 @@ package main
 import (
 	"fmt"
 	"github.com/go-chi/chi"
-	"github.com/wesovilabs/goa/api"
-	"github.com/wesovilabs/goaexamples/joinpoints/advice"
-	"github.com/wesovilabs/goaexamples/joinpoints/handler"
-	"github.com/wesovilabs/goaexamples/joinpoints/storage"
+	"github.com/wesovilabs/beyond/api"
+	"github.com/wesovilabs/beyond-examples/joinpoints/advice"
+	"github.com/wesovilabs/beyond-examples/joinpoints/handler"
+	"github.com/wesovilabs/beyond-examples/joinpoints/storage"
 	"net/http"
 )
 
 
-func Goa() *api.Goa {
+func Beyond() *api.Beyond {
 	return api.New().
 		WithBefore(advice.NewSimpleTracingAdvice, `*.*(...)...`)
 }

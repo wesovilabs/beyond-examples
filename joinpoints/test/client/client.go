@@ -3,7 +3,7 @@ package client
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/wesovilabs/goaexamples/joinpoints/model"
+	"github.com/wesovilabs/beyond-examples/joinpoints/model"
 	"io"
 	"net/http"
 	"net/url"

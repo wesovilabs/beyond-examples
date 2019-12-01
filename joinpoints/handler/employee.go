@@ -3,9 +3,9 @@ package handler
 import (
 	"encoding/json"
 	"github.com/go-chi/chi"
-	"github.com/wesovilabs/goaexamples/joinpoints/handler/internal"
-	"github.com/wesovilabs/goaexamples/joinpoints/model"
-	"github.com/wesovilabs/goaexamples/joinpoints/storage"
+	"github.com/wesovilabs/beyond-examples/joinpoints/handler/internal"
+	"github.com/wesovilabs/beyond-examples/joinpoints/model"
+	"github.com/wesovilabs/beyond-examples/joinpoints/storage"
 	"net/http"
 )
 

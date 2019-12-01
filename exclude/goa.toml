@@ -1,0 +1,9 @@
+project="github.com/wesovilabs/beyond-examples/exclude"
+outputDir="generated"
+verbose=false
+work=true
+
+excludes=[
+    ".git"
+]
+

@@ -2,22 +2,20 @@ package advice
 
 import (
 	"fmt"
-	"github.com/wesovilabs/goa/api"
-	"github.com/wesovilabs/goa/api/context"
+	"github.com/wesovilabs/beyond/api"
+	"github.com/wesovilabs/beyond/api/context"
 	"strings"
 )
 
 type ErrorsEnrichAdvice struct {
 }
 
-func (a *ErrorsEnrichAdvice) Returning(ctx *context.GoaContext) {
+func (a *ErrorsEnrichAdvice) Returning(ctx *context.BeyondContext) {
 	if index, result := ctx.Results().Find(isError);index>=0{
-		ctx.Results().SetAt(index, &CustomError{
-			err:      result.Value().(error),
-			pkg:      ctx.Pkg(),
-			function: ctx.Function(),
-			params:   ctx.Params(),
-		})
+		if result.Value() != nil {
+			err := result.Value().(error)
+			ctx.Results().SetAt(index, &CustomError{err: err, pkg: ctx.Pkg(), function: ctx.Function(), params: ctx.Params()})
+		}
 	}
 }
 

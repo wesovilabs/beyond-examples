@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/wesovilabs/goaexamples/timemeasurement/measurement"
+	"github.com/wesovilabs/beyond-examples/timemeasurement/measurement"
 )
 
 

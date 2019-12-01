@@ -1,4 +1,4 @@
-module github.com/wesovilabs/beyond-examples/around
+module github.com/wesovilabs/beyond-examples/settings
 
 require (
 	github.com/wesovilabs/beyond v0.0.1

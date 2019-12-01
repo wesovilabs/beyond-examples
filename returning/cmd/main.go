@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/wesovilabs/goa/api"
-	"github.com/wesovilabs/goaexamples/returning/advice"
-	"github.com/wesovilabs/goaexamples/returning/greeting"
+	"github.com/wesovilabs/beyond/api"
+	"github.com/wesovilabs/beyond-examples/returning/advice"
+	"github.com/wesovilabs/beyond-examples/returning/greeting"
 )
 
-func Goa() *api.Goa {
+func Beyond() *api.Beyond {
 	return api.New().
 		WithReturning(advice.NewErrorsEnrichAdviceAdvice, "*.*(...)error")
 }

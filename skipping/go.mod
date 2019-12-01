@@ -1,4 +1,4 @@
-module github.com/wesovilabs/beyond-examples/around
+module github.com/wesovilabs/beyond-examples/skipping
 
 require (
 	github.com/wesovilabs/beyond v0.0.1

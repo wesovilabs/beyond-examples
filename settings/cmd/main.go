@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/wesovilabs/beyond/api"
-	"github.com/wesovilabs/beyond-examples/before/advice"
-	"github.com/wesovilabs/beyond-examples/before/greeting"
+	"github.com/wesovilabs/beyond-examples/settings/advice"
+	"github.com/wesovilabs/beyond-examples/settings/greeting"
 )
 
 func Beyond() *api.Beyond {

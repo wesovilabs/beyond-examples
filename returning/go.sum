@@ -170,6 +170,8 @@ github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyC
 github.com/valyala/fasthttp v1.2.0/go.mod h1:4vX61m6KN+xDduDNwXrhIAVZaZaZiQ1luJk8LWSxF3s=
 github.com/valyala/quicktemplate v1.2.0/go.mod h1:EH+4AkTd43SvgIbQHYu59/cJyxDoOVRUAfrukLPuGJ4=
 github.com/valyala/tcplisten v0.0.0-20161114210144-ceec8f93295a/go.mod h1:v3UYOV9WzVtRmSR+PDvWpU/qWl4Wa5LApYYX4ZtKbio=
+github.com/wesovilabs/beyond master h1:tA3fDN9QofCY+37Jm7Q1SgGc3LjwFFeLpc5Mg2nf7jo=
+github.com/wesovilabs/beyond master/go.mod h1:C0iyrMOGEf+NdKKYWnA9313i0BgIoTt7X0tlboWN4m8=
 github.com/wesovilabs/beyond v0.0.1-rc1 h1:KJw9Khm21f5BabEaaGCZ7GvAi+auqcPyF7DN+t4cYZE=
 github.com/wesovilabs/beyond v0.0.1-rc1/go.mod h1:Md++E44HEQPu57cMo0a6+EUIXcqrV2uRm8+2Cv/Vafk=
 github.com/wesovilabs/beyond v0.0.2-0.20191130075146-9d94e6b3e4c1 h1:tA3fDN9QofCY+37Jm7Q1SgGc3LjwFFeLpc5Mg2nf7jo=

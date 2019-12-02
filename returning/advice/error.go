@@ -12,10 +12,7 @@ type ErrorsEnrichAdvice struct {
 
 func (a *ErrorsEnrichAdvice) Returning(ctx *context.BeyondContext) {
 	if index, result := ctx.Results().Find(isError);index>=0{
-		if result.Value() != nil {
-			err := result.Value().(error)
-			ctx.Results().SetAt(index, &CustomError{err: err, pkg: ctx.Pkg(), function: ctx.Function(), params: ctx.Params()})
-		}
+		ctx.Results().SetAt(index, &CustomError{err: result.Value().(error), pkg: ctx.Pkg(), function: ctx.Function(), params: ctx.Params()})
 	}
 }
 

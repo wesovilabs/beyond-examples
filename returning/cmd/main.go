@@ -16,7 +16,6 @@ func main() {
 	checkError(greeting.Greetings("Hello", ""))
 	checkError(greeting.Greetings("Bye", ""))
 	checkError(greeting.Greetings("--", "John"))
-	checkError(greeting.Greetings("Hello", "Sally"))
 }
 
 func checkError(err error){

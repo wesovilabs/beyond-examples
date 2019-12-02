@@ -21,7 +21,6 @@ func (a *BreakingAdvice) Before(ctx *context.BeyondContext) {
 		ctx.Results().SetAt(0,errors.New("this is awesome!"))
 		ctx.Exit()
 	}
-
 }
 
 

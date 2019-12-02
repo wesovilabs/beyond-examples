@@ -4,7 +4,7 @@ require (
 	github.com/go-chi/chi v4.0.2+incompatible
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/hashicorp/go-memdb v1.0.4 // indirect
-	github.com/wesovilabs/beyond v1.0.0-20191202184100
+	github.com/wesovilabs/beyond v1.0.0-rc2
 	github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c // indirect
 	github.com/xdg/stringprep v1.0.0 // indirect
 	go.mongodb.org/mongo-driver v1.1.3 // indirect

@@ -13,7 +13,8 @@ import (
 
 func Beyond() *api.Beyond {
 	return api.New().
-		WithBefore(advice.NewSimpleTracingAdvice, `*.*(...)...`)
+		WithBefore(advice.NewSimpleTracingAdvice, `*.*(...)...`).
+		Ignore("internal.RespondWithJSON(...)...")
 }
 
 func main() {

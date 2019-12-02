@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/wesovilabs/beyond/api"
-	"github.com/wesovilabs/beyond-examples/skipping/advice"
-	"github.com/wesovilabs/beyond-examples/skipping/greeting"
+	"github.com/wesovilabs/beyond-examples/skip-pointcut/advice"
+	"github.com/wesovilabs/beyond-examples/skip-pointcut/greeting"
 )
 
 func Beyond() *api.Beyond {

@@ -1,0 +1,7 @@
+# github.com/go-chi/chi v4.0.2+incompatible
+github.com/go-chi/chi
+# github.com/patrickmn/go-cache v2.1.0+incompatible
+github.com/patrickmn/go-cache
+# github.com/wesovilabs/beyond v1.0.1
+github.com/wesovilabs/beyond/api
+github.com/wesovilabs/beyond/api/context

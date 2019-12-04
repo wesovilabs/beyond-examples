@@ -117,6 +117,7 @@ github.com/olekukonko/tablewriter v0.0.1/go.mod h1:vsDQFd/mU46D+Z4whnwzcISnGGzXW
 github.com/onsi/ginkgo v1.6.0/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
 github.com/onsi/ginkgo v1.10.1/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
 github.com/onsi/gomega v1.7.0/go.mod h1:ex+gbHU/CVuBBDIJjb2X0qEXbFg53c61hWP/1CpauHY=
+github.com/patrickmn/go-cache v2.1.0+incompatible/go.mod h1:3Qf8kWWT7OJRJbdiICTKqZju1ZixQ/KpMGzzAfe6+WQ=
 github.com/pelletier/go-toml v1.2.0/go.mod h1:5z9KED0ma1S8pY6P1sdut58dfprrGBbd/94hg7ilaic=
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
@@ -175,6 +176,8 @@ github.com/wesovilabs/beyond master h1:tA3fDN9QofCY+37Jm7Q1SgGc3LjwFFeLpc5Mg2nf7
 github.com/wesovilabs/beyond master/go.mod h1:C0iyrMOGEf+NdKKYWnA9313i0BgIoTt7X0tlboWN4m8=
 github.com/wesovilabs/beyond v0.0.2-0.20191130075146-9d94e6b3e4c1 h1:tA3fDN9QofCY+37Jm7Q1SgGc3LjwFFeLpc5Mg2nf7jo=
 github.com/wesovilabs/beyond v0.0.2-0.20191130075146-9d94e6b3e4c1/go.mod h1:C0iyrMOGEf+NdKKYWnA9313i0BgIoTt7X0tlboWN4m8=
+github.com/wesovilabs/beyond v1.0.1 h1:r5EDrfcBTR7C83p0EWL5zLa3U/xV2ASwv2iAXpNZO8k=
+github.com/wesovilabs/beyond v1.0.1/go.mod h1:4izWhi6Pd/MKQXBxpkKWTEf37z8b+74KlvtQW7G9b40=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
 github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77/go.mod h1:aYKd//L2LvnjZzWKhF00oedf4jCCReLcmhLdhm1A27Q=
 go.etcd.io/bbolt v1.3.2/go.mod h1:IbVyRI1SCnLcuJnV2u8VeU0CEYM7e686BmAb1XKL+uU=

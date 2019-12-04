@@ -56,6 +56,7 @@ func (db *memDBClient) ListCitiesByCountry(countryID string) ([]*model.City, err
 }
 
 func (db *memDBClient) ListPeopleByCity(cityID string) ([]*model.Person, error) {
+	fmt.Println("accessing to the database...")
 	people := make([]*model.Person, 0)
 	for _, person := range db.people {
 		if person.City == cityID {

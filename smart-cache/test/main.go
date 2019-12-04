@@ -42,9 +42,16 @@ func main() {
 		Email:    "jane@mail.com",
 		City:     "MAD",
 	})
+	fmt.Printf("Adding person that lives in MLG\n")
+	api.CreatePerson(&model.Person{
+		Fullname: "Marina",
+		Email:    "marina@mail.com",
+		City:     "MLG",
+	})
 	listPeople("MAD")
+	listPeople("MLG")
 	fmt.Println("Sleeping 10 seconds...")
 	time.Sleep(10 * time.Second)
+	listPeople("MLG")
 	listPeople("MAD")
-
 }

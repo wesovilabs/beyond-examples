@@ -15,11 +15,11 @@ import (
 
 var c = cache.New(5*time.Minute, 10*time.Minute)
 
-type Memorization struct {
+type Memoization struct {
 	expirationTimeInSeconds time.Duration
 }
 
-func (m *Memorization) Before(ctx *context.BeyondContext) {
+func (m *Memoization) Before(ctx *context.BeyondContext) {
 	hash := hash(ctx.Pkg(),ctx.Function(),ctx.Params())
 	val, found := c.Get(hash)
 	if !found {
@@ -33,14 +33,14 @@ func (m *Memorization) Before(ctx *context.BeyondContext) {
 	}
 }
 
-func (m *Memorization) Returning(ctx *context.BeyondContext) {
+func (m *Memoization) Returning(ctx *context.BeyondContext) {
 	hash := ctx.Get("hash").(string)
 	c.Set(hash, ctx.Results(), m.expirationTimeInSeconds)
 }
 
-func Memorize(expirationTime int) func() api.Around {
+func Memoize(expirationTime int) func() api.Around {
 	return func() api.Around {
-		return &Memorization{
+		return &Memoization{
 			time.Duration(expirationTime) * time.Second,
 		}
 	}

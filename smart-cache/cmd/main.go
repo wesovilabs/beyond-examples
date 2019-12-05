@@ -13,7 +13,7 @@ import (
 func Beyond()*api.Beyond{
 	return api.New().
 		WithAround(advice.
-			Memorize(5),
+			Memoize(5),
 			"storage.*memDBClient.ListPeopleByCity(...)...")
 }
 
